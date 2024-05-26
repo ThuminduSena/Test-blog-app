@@ -188,6 +188,16 @@ export default function DashProfile() {
                     
                 )
             }
+            {
+                currentUser.isAdmin && (
+                    <Link to = '/create-ad'>
+                        <Button type='button' gradientDuoTone='pinkToOrange' className='w-full'>
+                            Create an Advertiesment
+                        </Button>
+                    </Link>
+                    
+                )
+            }
         </form>
         <div className='text-red-500 flex justify-between mt-5'>
             <span onClick={() => setShowModel(true)} className='cursor-pointer'>
